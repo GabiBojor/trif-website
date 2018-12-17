@@ -115,6 +115,11 @@ CUSTOM ELEMENTS
 .pad{
 	padding: 100px 0;
 }
+.small-container{
+    width: 980px;
+    max-width: 100%;
+    margin: 0 auto;
+}
 .custom-container{
 	max-width: 100%;
 	margin: 0 auto;
@@ -141,10 +146,13 @@ CUSTOM ELEMENTS
 }
 	.flexslider{
 		border: none;
-		padding: 80px 0 0;
+		padding: 0;
 		margin: 0;
 		background: transparent;
 	}
+    .flexslider li {
+        position: relative;
+    }
 	.flex-control-paging li a {
 		background: transparent;
 		box-shadow: none;
@@ -163,13 +171,24 @@ CUSTOM ELEMENTS
 	.flex-direction-nav{
 		display: none;
 	}
-	.flexslider h1 {
+   .flexslider li .v-align .row {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.slide-text{
+    width: 425px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+	.slide-text h1 {
     color: #fff;
     font-size: 50px;
     line-height: 50px;
     margin: 0 auto;
 }
-.flexslider span {
+.slide-text span {
     display: block;
     color: #fff;
     margin: 30px 0 50px;
@@ -194,7 +213,7 @@ CUSTOM ELEMENTS
     display: inline-block;
     vertical-align: top;
     background: #fff;
-    width: 24%;
+    width: 33%;
     box-shadow: 0 1px 20px #ccc;
     text-align: center;
     border-radius: 20px;
@@ -219,7 +238,7 @@ margin-top: 50px;
 
 .service-header {
     background: radial-gradient(circle at top, #ebebeb 51%, transparent 0%) center / 250% 150% no-repeat;
-    min-height: 200px;
+    min-height: 210px;
     margin-bottom: 30px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -257,9 +276,12 @@ margin-top: 50px;
 .portfolio > div {
     display: inline-block;
     vertical-align: top;
-    width: 19%;
+    width: 23%;
     margin: 0 15px 15px 0;
     box-shadow: 0 0 3px #000;
+}
+.portfolio > div:nth-child(4n){
+    margin-right: 0;
 }
 .contact-form {
     width: 860px;
@@ -289,7 +311,7 @@ margin-top: 50px;
 .testimonials > div {
     display: inline-block;
     vertical-align: top;
-    width: 30%;
+    width: 31%;
     border-radius: 20px;
       box-shadow: 0 1px 20px #ccc;
       background: #fff;
@@ -325,6 +347,11 @@ margin-top: 50px;
 }
 .testimonial-bg {
     padding-bottom: 30px;
+}
+.form-container{
+    width: 860px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 /*------
 RESPONSIVE CSS
