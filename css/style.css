@@ -353,6 +353,35 @@ margin-top: 50px;
     max-width: 100%;
     margin: 0 auto;
 }
+/*-- order page --*/
+.total-price {
+    background: #F4F4F4;
+    display: inline-block;
+    padding: 15px;
+}
+.order-total{
+    margin-left: 5px;
+}
+.calculator > div {
+    padding: 15px;
+    background: #ccc;
+    display: inline-block;
+    vertical-align: top;
+    width: 24.7%;
+    margin-bottom: 3px;
+}
+.calculator > div:nth-child(even){
+    background: #ddd;
+}
+.final_price {
+    border: none;
+    background: transparent;
+    text-align: center;
+    width: 70px;
+}
+.optional-extra {
+    float: right;
+}
 /*------
 RESPONSIVE CSS
 ------ */
